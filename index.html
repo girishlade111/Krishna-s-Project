@@ -26,7 +26,9 @@
         .bg-tum-green { background-color: #9fbe30; }
         .bg-tum-lightblue { background-color: #dbeffd; }
         .bg-tum-lightpurple { background-color: #e6e6fa; } /* Similar to the purple in the image */
-        
+        .bg-tum-pink { background-color: #ea728f; } /* For the '19' box */
+        .bg-tum-orange { background-color: #f5a623; } /* For the '254' box */
+
         /* Custom border for the news cards */
         .news-card {
             border-bottom: 4px solid #3070b3;
@@ -61,10 +63,10 @@
             @apply text-xl font-semibold mb-3;
         }
         .contact-card p {
-            @apply text-sm text-gray-300 mb-4;
+            @apply text-sm text-gray-700 mb-4; /* Changed text to gray-700 for better contrast on white */
         }
         .contact-card a {
-            @apply text-white font-semibold inline-flex items-center group;
+            @apply text-tum-blue-light font-semibold inline-flex items-center group; /* Changed link color */
         }
         .contact-card a svg {
             @apply h-4 w-4 ml-1.5 transition-transform group-hover:translate-x-1;
@@ -123,7 +125,7 @@
 
     <!-- Main Content --><main>
         
-        <!-- Hero Section --><section class="relative h-[30rem] md:h-[40rem] bg-cover bg-center" style="background-image: url('https://placehold.co/1920x700/555/999?text=University+Hero+Image');">
+        <!-- Hero Section --><section class="relative h-[30rem] md:h-[40rem] bg-cover bg-center" style="background-image: url('https://placehold.co/1920x700/5f6a7c/ffffff?text=University+Building+in+Snowy+Mountains');">
             <!-- Overlay --><div class="absolute inset-0 bg-black opacity-30"></div>
             
             <div class="container mx-auto px-4 lg:px-8 relative h-full flex items-end pb-16">
@@ -147,7 +149,7 @@
                 <!-- News Grid --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     
                     <!-- News Card 1 --><a href="#" class="block bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 news-card">
-                        <img src="https://placehold.co/600x400/ddd/888?text=News+Image+1" alt="News article 1" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/b3cde0/333?text=Researchers+in+a+Lab" alt="Researchers in a Lab" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">TUM IN THE MEDIA</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">TUM ranks fourth worldwide among universities in the Global University Employability Ranking</h3>
@@ -156,7 +158,7 @@
                     </a>
 
                     <!-- News Card 2 --><a href="#" class="block bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 news-card">
-                        <img src="https://placehold.co/600x400/ddd/888?text=News+Image+2" alt="News article 2" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/f0b7a4/333?text=Microscopic+Cell+Imagery" alt="Microscopic Cell Imagery" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">RESEARCH</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">New insights into the biology of metastatic breast cancer</h3>
@@ -165,7 +167,7 @@
                     </a>
 
                     <!-- News Card 3 --><a href="#" class="block bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 news-card">
-                        <img src="https://placehold.co/600x400/ddd/888?text=News+Image+3" alt="News article 3" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/c7d0d9/333?text=University+Handshake" alt="University Handshake" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">UNIVERSITY</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">TUM and Imperial College London: A new strategic flagship partnership</h3>
@@ -174,7 +176,7 @@
                     </a>
 
                     <!-- News Card 4 --><a href="#" class="block bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 news-card">
-                        <img src="https://placehold.co/600x400/ddd/888?text=News+Image+4" alt="News article 4" class="w-full h-48 object-cover">
+                        <img src="https://placehold.co/600x400/2a4a6e/eee?text=AI+Digital+Graphic" alt="AI Digital Graphic" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">CAMPUS LIFE</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">Artificial intelligence in teaching: "We need to talk about AI"</h3>
@@ -269,17 +271,17 @@
                         </a>
                     </div>
                     <div>
-                        <img src="https://placehold.co/600x400/fff/333?text=Students+Image" alt="Students" class="rounded-lg shadow-md w-full h-64 object-cover">
+                        <img src="https://placehold.co/600x400/e6e0d4/333?text=Students+on+Campus+Steps" alt="Students on Campus Steps" class="rounded-lg shadow-md w-full h-64 object-cover">
                     </div>
                 </div>
             </section>
 
             <!-- Discover TUM: Doctorate, Postdocs, Researchers --><section class="mt-12 md:mt-16">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-                    <!-- Left: Image with text --><div class="relative bg-white rounded-lg shadow-lg flex flex-col justify-between p-8 text-gray-900">
-                        <img src="https://placehold.co/600x400/ddd/555?text=Researchers+Discussion" alt="Researchers discussing" class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-80">
-                        <div class="relative z-10 p-6 bg-white bg-opacity-90 rounded-lg self-end mt-auto max-w-[80%]">
-                            <h3 class="text-2xl font-bold mb-2">Doctorate, Postdocs & Researchers</h3>
+                    <!-- Left: Image with text --><div class="relative bg-white rounded-lg shadow-lg flex flex-col justify-end text-gray-900 min-h-[30rem]">
+                        <img src="https://placehold.co/600x500/d1d5db/333?text=Researchers+at+a+Table" alt="Researchers discussing" class="absolute inset-0 w-full h-full object-cover rounded-lg">
+                        <div class="relative z-10 p-6 bg-white bg-opacity-90 rounded-lg m-6 max-w-[90%]">
+                            <h3 class="text-3xl font-bold mb-2">Doctorate, Postdocs & Researchers</h3>
                             <p class="text-base text-gray-700">
                                 Discover TUM's services and programs for doctoral candidates, postdocs and researchers.
                             </p>
@@ -345,6 +347,32 @@
                 </div>
             </section>
 
+            <!-- NEW: Second TUM in figures Section --><section class="mt-12 md:mt-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2 bg-tum-blue-light text-white p-8 rounded-lg shadow-lg">
+                        <div class="text-6xl font-bold">52,931</div>
+                        <div class="text-2xl font-semibold mt-2">Students</div>
+                        <div class="w-full h-2 bg-white mt-4 rounded-full"></div>
+                        <a href="#" class="mt-6 font-semibold inline-flex items-center group text-lg">
+                            About TUM
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="text-gray-900 space-y-4">
+                        <div class="bg-tum-orange p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold">254</div>
+                            <div class="text-lg font-semibold">Nobel Laureates</div>
+                        </div>
+                        <div class="bg-tum-pink text-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl font-bold">19</div>
+                            <div class="text-lg font-semibold">Leibniz Prize Winners</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Our Mission Video Section --><section class="mt-12 md:mt-16 bg-tum-blue-light rounded-lg shadow-lg p-8 relative overflow-hidden">
                 <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1200x600/3070b3/ffffff?text=Abstract+Background');"></div>
                 <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 text-white">
@@ -360,8 +388,8 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="md:w-1/2 flex justify-center items-center h-64 md:h-80 bg-gray-700 rounded-lg shadow-md overflow-hidden">
-                        <button class="text-white text-opacity-80 hover:text-opacity-100 transition-colors">
+                    <div class="md:w-1/2 flex justify-center items-center h-64 md:h-80 bg-gray-700 rounded-lg shadow-md overflow-hidden" style="background-image: url('https://placehold.co/600x450/4a5568/999?text=Video+Placeholder'); background-size: cover; background-position: center;">
+                        <button class="text-white text-opacity-80 hover:text-opacity-100 transition-colors backdrop-blur-sm bg-black bg-opacity-20 rounded-full p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
                             </svg>
@@ -388,7 +416,7 @@
                         </a>
                     </div>
                     <div>
-                        <img src="https://placehold.co/600x400/ccc/333?text=Person+Walking" alt="Person walking" class="rounded-lg shadow-md w-full h-72 object-cover">
+                        <img src="https://placehold.co/600x400/b0b4b8/333?text=Person+in+Modern+Building" alt="Person walking" class="rounded-lg shadow-md w-full h-72 object-cover">
                     </div>
                 </div>
             </section>
@@ -397,7 +425,7 @@
                 <h2 class="text-3xl font-bold text-white mb-6">Life at TUM</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Life Card 1 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Campus+Life" alt="Campus Life" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/e0d6c8/333?text=Students+Outdoors" alt="Campus Life" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <h3 class="font-bold text-xl mb-2">Campus Life</h3>
                             <p class="text-sm text-gray-700">
@@ -406,7 +434,7 @@
                         </div>
                     </div>
                     <!-- Life Card 2 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Sports+and+Leisure" alt="Sports and Leisure" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/d6d9dc/333?text=Man+on+a+Slackline" alt="Sports and Leisure" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <h3 class="font-bold text-xl mb-2">Sports and Leisure</h3>
                             <p class="text-sm text-gray-700">
@@ -415,7 +443,7 @@
                         </div>
                     </div>
                     <!-- Life Card 3 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Living+in+Munich" alt="Living in Munich" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/d4cccb/333?text=Munich+Skyline" alt="Living in Munich" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <h3 class="font-bold text-xl mb-2">Living in Munich</h3>
                             <p class="text-sm text-gray-700">
@@ -429,21 +457,21 @@
             <!-- Social Media / Latest from TUM --><section class="mt-12 md:mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Social Card 1 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Social+Image+1" alt="Social Media Post" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/c9d6df/333?text=Person+in+VR+Headset" alt="Social Media Post" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">TUM ON SOCIAL MEDIA</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">Follow us on LinkedIn for the latest updates.</h3>
                         </div>
                     </div>
                     <!-- Social Card 2 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Social+Image+2" alt="Latest News" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/d1c7c2/333?text=Robotics+Lab" alt="Latest News" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">LATEST NEWS</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">Insights into cutting-edge research at TUM.</h3>
                         </div>
                     </div>
                     <!-- Social Card 3 --><div class="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://placehold.co/600x400/ddd/888?text=Social+Image+3" alt="Events" class="w-full h-56 object-cover">
+                        <img src="https://placehold.co/600x400/d3d3d3/333?text=Auditorium+Event" alt="Events" class="w-full h-56 object-cover">
                         <div class="p-5">
                             <span class="text-xs font-semibold text-gray-500 uppercase">EVENTS</span>
                             <h3 class="font-bold text-lg mt-2 mb-3 leading-tight">Upcoming webinars and campus events.</h3>
@@ -479,7 +507,7 @@
                                 Arcisstraße 21<br>
                                 80333 München
                             </p>
-                            <a href="#" class="text-tum-blue-light">
+                            <a href="#">
                                 To the contact page
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -491,7 +519,7 @@
                             <p>
                                 Prospective students can find general information about studying at TUM here.
                             </p>
-                            <a href="#" class="text-tum-blue-light">
+                            <a href="#">
                                 To the contact page
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -503,7 +531,7 @@
                             <p>
                                 Support for international students and researchers.
                             </p>
-                            <a href="#" class="text-tum-blue-light">
+                            <a href="#">
                                 To the contact page
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -515,7 +543,7 @@
                             <p>
                                 Access our complete directory of contacts and services.
                             </p>
-                            <a href="#" class="text-tum-blue-light">
+                            <a href="#">
                                 To the contact page
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -523,6 +551,18 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- NEW: What's new? Section --><section class="mt-12 md:mt-16">
+                <div class="bg-tum-lightpurple text-gray-900 p-8 rounded-lg shadow-lg text-center">
+                    <h2 class="text-3xl font-bold mb-4">What's new?</h2>
+                    <p class="text-lg max-w-2xl mx-auto mb-6">
+                        Stay up to date with the latest news and events from the Technical University of Munich.
+                    </p>
+                    <a href="#" class="inline-block bg-tum-blue-light text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-transform hover:scale-105">
+                        Subscribe to newsletter
+                    </a>
                 </div>
             </section>
 
@@ -581,7 +621,7 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="#" class="hover:text-white">Facebook</a></li>
                         <li><a href="#" class="hover:text-white">Instagram</a></li>
-                        <li><a href="#" class="hover:text-white">Twitter</a></li>
+                        <li><a href="#" classs="hover:text-white">Twitter</a></li>
                         <li><a href="#" class="hover:text-white">YouTube</a></li>
                         <li><a href="#" class="hover:text-white">LinkedIn</a></li>
                         <li><a href="#" class="hover:text-white">Newsletter</a></li>
@@ -593,23 +633,21 @@
             <!-- Bottom Footer Section --><div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
                 <p>&copy; 2025 Technical University of Munich</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-white">
+                    <a href="#" class="hover:text-white" aria-label="Facebook">
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
                         </svg>
-                        <span class="sr-only">Facebook</span>
                     </a>
-                    <a href="#" class="hover:text-white">
+                    <a href="#" class="hover:text-white" aria-label="Twitter">
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12.423 20.146a.75.75 0 01.077.75l.135.259a.75.75 0 01-.135.259.75.75 0 01-.75-.077l-.259-.135a.75.75 0 01-.259.135.75.75 0 01-.75-.077l-.135-.259a.75.75 0 01-.077-.75l.259-.135a.75.75 0 01-.135-.259.75.75 0 01.077-.75l.135-.259a.75.75 0 01.75-.077l.259-.135a.75.75 0 01.259.135.75.75 0 01.75-.077zm-3.096-7.391a.75.75 0 01.077-.75l.135-.259a.75.75 0 01-.135-.259.75.75 0 01-.75.077l-.259.135a.75.75 0 01-.259-.135.75.75 0 01-.75.077l-.135.259a.75.75 0 01-.077.75l.259.135a.75.75 0 01-.135.259.75.75 0 01.077.75l.135.259a.75.75 0 01.75-.077l.259-.135a.75.75 0 01.259.135.75.75 0 01.75-.077zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" clip-rule="evenodd" />
+                            <!-- A generic icon, as the 'X' logo is not standard -->
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                         </svg>
-                        <span class="sr-only">Twitter</span>
                     </a>
-                    <a href="#" class="hover:text-white">
+                    <a href="#" class="hover:text-white" aria-label="Instagram">
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2c-2.716 0-3.056.01-4.122.06-.917.042-1.574.195-2.13.407-.55.21-.955.474-1.385.904-.43.43-.695.835-.904 1.385-.212.556-.365 1.213-.407 2.13C2.01 8.944 2 9.284 2 12s.01 3.056.06 4.122c.042.917.195 1.574.407 2.13.21.55.474.955.904 1.385.43.43.835.695 1.385.904.556.212 1.213.365 2.13.407 1.066.05 1.406.06 4.122.06s3.056-.01 4.122-.06c.917-.042 1.574-.195 2.13-.407.55-.21.955-.474 1.385-.904.43-.43.695-.835.904-1.385.212-.556.365-1.213.407-2.13.05-1.066.06-1.406.06-4.122s-.01-3.056-.06-4.122c-.042-.917-.195-1.574-.407-2.13-.21-.55-.474-.955-.904-1.385-.43-.43-.695-.835-.904-1.385-.556-.212-1.213-.365-2.13-.407C15.056 2.01 14.716 2 12 2zm0 3.672c3.415 0 6.183 2.768 6.183 6.183s-2.768 6.183-6.183 6.183-6.183-2.768-6.183-6.183 2.768-6.183 6.183-6.183zm0 2.275a3.908 3.908 0 100 7.817 3.908 3.908 0 000-7.817z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M12 2C8.74 2 8.333.015 7.053.072 5.775.13 4.905.333 4.14.63c-.784.297-1.438.704-2.09 1.357-.654.654-1.06 1.306-1.357 2.09-.297.765-.49 1.635-.558 2.913C2.015 8.333 2 8.74 2 12s.015 3.667.072 4.947c.068 1.277.26 2.148.558 2.913.297.784.704 1.438 1.357 2.09.654.654 1.306 1.06 2.09 1.357.765.297 1.635.49 2.913.558C8.333 21.985 8.74 22 12 22s3.667-.015 4.947-.072c1.277-.068 2.148-.26 2.913-.558.784-.297 1.438-.704 2.09-1.357.654-.654 1.06-1.306 1.357-2.09.297-.765.49-1.635.558-2.913.057-1.28.072-1.68.072-4.947s-.015-3.667-.072-4.947c-.068-1.277-.26-2.148-.558-2.913-.297-.784-.704-1.438-1.357-2.09-.654-.654-1.306-1.06-2.09-1.357-.765-.297-1.635-.49-2.913-.558C15.667 2.015 15.26 2 12 2zm0 1.62c3.203 0 3.585.012 4.85.07 1.17.055 1.805.248 2.227.42.44.175.748.387 1.08.72.33.332.543.64.72 1.08.172.422.365 1.057.42 2.227.058 1.265.07 1.648.07 4.85s-.012 3.585-.07 4.85c-.055 1.17-.248 1.805-.42 2.227-.175.44-.387.748-.72 1.08-.332.33-.64.543-1.08.72-.422.172-1.057.365-2.227.42-1.265.058-1.648.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.055-1.805-.248-2.227-.42-.44-.175-.748-.387-1.08-.72-.33-.332-.543-.64-.72-1.08-.172-.422-.365-1.057-.42-2.227-.058-1.265-.07-1.648-.07-4.85s.012-3.585.07-4.85c.055-1.17.248-1.805.42-2.227.175-.44.387-.748.72-1.08.332-.33.64-.543 1.08-.72.422-.172 1.057-.365 2.227-.42C8.415 3.632 8.797 3.62 12 3.62zm0 1.62c-2.405 0-4.36 1.955-4.36 4.36s1.955 4.36 4.36 4.36 4.36-1.955 4.36-4.36S14.405 5.24 12 5.24zm0 7.18c-1.54 0-2.78-1.24-2.78-2.78s1.24-2.78 2.78-2.78 2.78 1.24 2.78 2.78-1.24 2.78-2.78 2.78zm4.965-7.82c-.63 0-1.14-.51-1.14-1.14s.51-1.14 1.14-1.14 1.14.51 1.14 1.14-.51 1.14-1.14 1.14z" clip-rule="evenodd" />
                         </svg>
-                        <span class="sr-only">Instagram</span>
                     </a>
                 </div>
             </div>
