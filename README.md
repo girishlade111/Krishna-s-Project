@@ -64,3 +64,7 @@ To view this project locally, you can simply clone the repository and open the `
 **1. Clone the repository:**
 ```bash
 git clone [https://github.com/](https://github.com/)[your-github-username]/[your-repo-name].git
+
+---
+
+Built by Girish Lade — [ladestack.in](https://ladestack.in)
